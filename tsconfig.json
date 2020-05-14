@@ -20,6 +20,5 @@
     "pretty": true,
     "removeComments": false,
     "stripInternal": true
-  },
-  "exclude": ["node_modules", "**/dist/**/*"]
+  }
 }
