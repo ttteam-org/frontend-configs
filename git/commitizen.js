@@ -1,6 +1,6 @@
 module.exports = {
   types: [
-    { value: 'feature', name: 'feature:   Добавление нового функционала' },
+    { value: 'feat', name: 'feature:   Добавление нового функционала' },
     { value: 'fix', name: 'fix:       Исправление ошибок' },
     { value: 'test', name: 'test:      Добавление тестов' },
     {
