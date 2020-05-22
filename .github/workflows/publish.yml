@@ -26,7 +26,7 @@ jobs:
       with:
         node-version: 12
         registry-url: 'https://npm.pkg.github.com'
-    - name: Публикачия на gh registry
+    - name: Публикация на gh registry
       run: |
         yarn policies set-version 1.22.4
         yarn
