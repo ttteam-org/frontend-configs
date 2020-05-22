@@ -12,5 +12,9 @@ module.exports = {
   template: {
     issue: "[{{text}}]({{url}}) {{name}}",
     changelogTitle: '### Изменения\n\n',
+    commit: ({ message, url, author, name }) => {
+      console.log(message, url, author, name)
+      return `[${message}](${url}) - ${author ? `@${author}` : name}`;
+    }
   }
 }
