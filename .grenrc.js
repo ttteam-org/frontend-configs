@@ -12,6 +12,5 @@ module.exports = {
   template: {
     issue: "[{{text}}]({{url}}) {{name}}",
     changelogTitle: '### Изменения\n\n',
-    release: '{{body}}'
   }
 }
