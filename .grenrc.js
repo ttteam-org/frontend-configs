@@ -10,9 +10,7 @@ module.exports = {
   "onlyMilestones": false,
   "groupBy": false,
   template: {
-    issue: ({ text, url, name }) => (
-      `- ${name.replace(/((GINF|TSUB)-\d*)/, '[$1](https://jira.csssr.io/browse/$1)')} [${text}](${url})`
-    ),
+    issue: "[{{text}}]({{url}}) {{name}}",
     changelogTitle: '### Изменения\n\n',
     release: '{{body}}'
   }
