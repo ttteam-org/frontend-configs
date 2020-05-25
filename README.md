@@ -44,14 +44,13 @@ const myProjectConfig = {
   /// some code
 };
 
-module.exports = webpackMerge(getCommonConfig({ root: path.resolve(__dirname), entry: './src/index.ts', port: 3000 }), myProjectConfig);
+module.exports = webpackMerge(getCommonConfig({ appConfig, postCssConfig }), myProjectConfig);
 
 ```
 
 Принимает на вход
 
-```js
-root - корневая директория проекта
-entry - входной файл
-port - Порт, на котором стартовать dev server. По умолчанию 3000
+```ts
+appConfig: { root: string, port: number, analyze: 0 | 1, mode: 'production' | 'development', entry: string } - конфигурация для настройки вэбпака
+postCssConfig - конфиг postCss
 ```
