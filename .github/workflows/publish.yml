@@ -22,7 +22,7 @@ jobs:
       run: |
         yarn
         yarn release --no-verify --message "chore(package): обновление пакета [skip ci]"
-        git push origin master --follow-tags
+        git push testorigin master --follow-tags
 
     - name: Использование Node.js 12
       uses: actions/setup-node@v1
