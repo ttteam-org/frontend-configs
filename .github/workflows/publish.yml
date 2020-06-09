@@ -25,10 +25,10 @@ jobs:
         registry-url: 'https://npm.pkg.github.com'
 
     - name: Генерация логов
-        id: changelog
-        uses: hitmanet/vega-actions/generate-changelog@master
-        env:
-          GITHUB_AUTH: ${{ secrets.GITHUB_TOKEN }}
+      id: changelog
+      uses: hitmanet/vega-actions/generate-changelog@master
+      env:
+        GITHUB_AUTH: ${{ secrets.GITHUB_TOKEN }}
 
     - name: Create a draft GitHub release
       uses: hitmanet/vega-actions/generate-gh-release@master
