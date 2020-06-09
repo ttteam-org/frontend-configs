@@ -9,6 +9,9 @@
     "node": "^12.16.2",
     "yarn": "^1.22.4"
   },
+  "scripts": {
+    "changelog": "node ../lerna-changelog/bin/cli.js"
+  },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
   },
