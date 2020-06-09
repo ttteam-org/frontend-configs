@@ -1,6 +1,6 @@
 {
   "name": "@ttteam-org/frontend-configs",
-  "version": "0.4.0",
+  "version": "0.4.3-2",
   "main": "index.js",
   "author": "csssr",
   "license": "MIT",
@@ -10,7 +10,8 @@
     "yarn": "^1.22.4"
   },
   "scripts": {
-    "changelog": "node ../lerna-changelog/bin/cli.js"
+    "changelog": "lerna-changelog",
+    "release": "standard-version"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
@@ -19,11 +20,17 @@
     "type": "git",
     "url": "ssh://git@github.com:ttteam-org/frontend-configs.git"
   },
+  "standard-version": {
+    "skip": {
+      "changelog": true
+    }
+  },
   "dependencies": {
     "@babel/core": "^7.9.0",
     "@babel/preset-env": "^7.9.5",
     "@babel/preset-react": "^7.9.4",
     "@babel/preset-typescript": "^7.9.0",
+    "@hitmanet808/lerna-changelog": "^3.0.0",
     "@testing-library/jest-dom": "^5.5.0",
     "@testing-library/react": "^10.0.3",
     "@types/jest": "^25.2.1",
@@ -58,9 +65,13 @@
     "terser-webpack-plugin": "^3.0.1",
     "ts-loader": "^7.0.1",
     "tsconfig-paths-webpack-plugin": "^3.2.0",
-    "typescript": "^3.8.3",
     "ttypescript": "^1.5.10",
+    "typescript": "^3.8.3",
     "webpack": "^4.42.1",
     "webpack-bundle-analyzer": "^3.7.0"
+  },
+  "devDependencies": {
+    "semantic-release": "^17.0.8",
+    "standard-version": "^8.0.0"
   }
 }
