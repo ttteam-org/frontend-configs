@@ -1,6 +1,6 @@
 {
   "name": "@ttteam-org/frontend-configs",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "main": "index.js",
   "author": "csssr",
   "license": "MIT",
@@ -58,9 +58,12 @@
     "terser-webpack-plugin": "^3.0.1",
     "ts-loader": "^7.0.1",
     "tsconfig-paths-webpack-plugin": "^3.2.0",
-    "typescript": "^3.8.3",
     "ttypescript": "^1.5.10",
+    "typescript": "^3.8.3",
     "webpack": "^4.42.1",
     "webpack-bundle-analyzer": "^3.7.0"
+  },
+  "devDependencies": {
+    "standard-version": "^8.0.0"
   }
 }
