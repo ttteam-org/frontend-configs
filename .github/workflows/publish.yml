@@ -12,7 +12,7 @@ jobs:
     - name: Checkout branch
       uses: actions/checkout@v1
       with:
-        GH_TOKEN: ${{ secrets.ADMIN_KEY }}
+        token: ${{ secrets.ADMIN_KEY }}
     - name: Настройка git
       run: |
         git config --local user.name "GitHub Workflow"
@@ -23,7 +23,7 @@ jobs:
         yarn
         yarn release --no-verify --message "chore(package): обновление пакета [skip ci]"
         git push origin master --follow-tags
-        
+
     - name: Использование Node.js 12
       uses: actions/setup-node@v1
       with:
