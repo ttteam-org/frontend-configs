@@ -18,17 +18,17 @@ jobs:
         git config --local user.name "GitHub Workflow"
         git config --local user.email "workflow@github.com"
 
-    - name: Поднятие версий пакетов
-      run: |
-        yarn
-        yarn release --no-verify --message "chore(package): обновление пакета [skip ci]"
-        git push origin master --follow-tags
-
     - name: Использование Node.js 12
       uses: actions/setup-node@v1
       with:
         node-version: 12
         registry-url: 'https://npm.pkg.github.com'
+
+    - name: Поднятие версий пакетов
+      run: |
+        yarn --frozen-lockfile
+        yarn release --no-verify --message "chore(package): обновление пакета [skip ci]"
+        git push origin master --follow-tags
 
     - name: Генерация логов
       id: changelog
