@@ -34,6 +34,7 @@ jobs:
       run: |
         pwd
         ls node_modules/@hitmanet808/lerna-changelog
+        yarn changelog
 
     - name: Генерация логов
       id: changelog
