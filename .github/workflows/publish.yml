@@ -17,6 +17,9 @@ jobs:
       run: |
         git config --local user.name "GitHub Workflow"
         git config --local user.email "workflow@github.com"
+    
+    - name: Скачивание всей git-истории (чтобы работал from-git)
+      run: git fetch --prune --unshallow
 
     - name: Использование Node.js 12
       uses: actions/setup-node@v1
