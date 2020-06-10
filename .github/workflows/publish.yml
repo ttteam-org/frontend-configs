@@ -35,6 +35,9 @@ jobs:
         pwd
         ls node_modules/@hitmanet808/lerna-changelog
         yarn changelog
+      env:
+        GITHUB_AUTH: ${{ secrets.GITHUB_TOKEN }}
+
 
     - name: Генерация логов
       id: changelog
