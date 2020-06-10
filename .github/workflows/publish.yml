@@ -29,6 +29,15 @@ jobs:
         yarn --frozen-lockfile
         yarn release --no-verify --message "chore(package): обновление пакета [skip ci]"
         git push origin master --follow-tags
+        
+    - name: Тест
+      run: |
+        pwd
+        ls node_modules/@hitmanet808/lerna-changelog
+        yarn changelog
+      env:
+        GITHUB_AUTH: ${{ secrets.GITHUB_TOKEN }}
+
 
     - name: Генерация логов
       id: changelog
