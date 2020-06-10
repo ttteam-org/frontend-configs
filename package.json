@@ -71,6 +71,6 @@
   },
   "devDependencies": {
     "standard-version": "^8.0.0",
-    "@hitmanet808/lerna-changelog": "^3.0.0"
+    "@hitmanet808/lerna-changelog": "^3.0.1-0"
   }
 }
