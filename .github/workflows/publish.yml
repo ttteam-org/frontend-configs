@@ -17,7 +17,7 @@ jobs:
       run: |
         git config --local user.name "GitHub Workflow"
         git config --local user.email "workflow@github.com"
-    
+
     - name: Скачивание всей git-истории (чтобы работал from-git)
       run: git fetch --prune --unshallow
 
@@ -32,16 +32,7 @@ jobs:
         yarn --frozen-lockfile
         yarn release --no-verify --message "chore(package): обновление пакета [skip ci]"
         git push origin master --follow-tags
-        
-    - name: Тест
-      run: |
-        pwd
-        ls node_modules/@hitmanet808/lerna-changelog
-        yarn changelog
-      env:
-        GITHUB_AUTH: ${{ secrets.GITHUB_TOKEN }}
-
-
+      
     - name: Генерация логов
       id: changelog
       uses: hitmanet/vega-actions/generate-changelog@master

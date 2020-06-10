@@ -899,10 +899,10 @@
     exec-sh "^0.3.2"
     minimist "^1.2.0"
 
-"@hitmanet808/lerna-changelog@^3.0.1-0":
-  version "3.0.1-0"
-  resolved "https://registry.yarnpkg.com/@hitmanet808/lerna-changelog/-/lerna-changelog-3.0.1-0.tgz#428604e14ea693f74710d9f9b2b4cf4da733b211"
-  integrity sha512-W4hmfrtolqmZSt13vDQqqaWi13BkbiXAgwoSzWv3FC5e8t3LwLXvsv9KHKadi4zOveb3rxxYy8jA1TnhndfRcQ==
+"@hitmanet808/lerna-changelog@3.0.1":
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/@hitmanet808/lerna-changelog/-/lerna-changelog-3.0.1.tgz#698cdac8ffe1f7edc285e6ba4a585f3c4dca4d10"
+  integrity sha512-lIc1dEcS6+NsZY2YE5uoJjbX4nR2u0+Ofl56JBsM0gulaj3x7raa/1Gc2GCx6XR1L3quik36HMXZgm6UquruKw==
   dependencies:
     chalk "^2.4.1"
     cli-highlight "^2.1.4"
